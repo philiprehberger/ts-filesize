@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/philiprehberger/ts-filesize/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-filesize/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/filesize)](https://www.npmjs.com/package/@philiprehberger/filesize)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/github/license/philiprehberger/ts-filesize)](LICENSE)
 
 Human-readable file size formatting and parsing — bytes to KB, MB, GB and back.
 
