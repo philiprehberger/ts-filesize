@@ -1,9 +1,8 @@
 # @philiprehberger/filesize
 
 [![CI](https://github.com/philiprehberger/ts-filesize/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-filesize/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@philiprehberger/filesize)](https://www.npmjs.com/package/@philiprehberger/filesize)
-[![License](https://img.shields.io/github/license/philiprehberger/ts-filesize)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![npm version](https://img.shields.io/npm/v/@philiprehberger/filesize.svg)](https://www.npmjs.com/package/@philiprehberger/filesize)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/ts-filesize)](https://github.com/philiprehberger/ts-filesize/commits/main)
 
 Human-readable file size formatting and parsing — bytes to KB, MB, GB and back.
 
@@ -85,6 +84,24 @@ npm run build
 npm test
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/ts-filesize)
+
+🐛 [Report issues](https://github.com/philiprehberger/ts-filesize/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/ts-filesize/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
