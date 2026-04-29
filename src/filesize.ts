@@ -95,3 +95,8 @@ export function formatBits(bits: number, options: FormatOptions = {}): string {
   const separator = space ? ' ' : '';
   return `${negative ? '-' : ''}${formatted}${separator}${BIT_UNITS[unitIndex]}`;
 }
+
+export function formatBitrate(bitsPerSecond: number, options: FormatOptions = {}): string {
+  if (!Number.isFinite(bitsPerSecond)) return String(bitsPerSecond);
+  return `${formatBits(bitsPerSecond, options)}/s`;
+}

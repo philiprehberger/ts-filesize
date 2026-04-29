@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/filesize",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Human-readable file size formatting and parsing — bytes to KB, MB, GB and back",
   "type": "module",
   "main": "./dist/index.cjs",

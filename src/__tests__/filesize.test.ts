@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { formatBytes, parseBytes, formatBits } from '../../dist/index.js';
+import { formatBytes, parseBytes, formatBits, formatBitrate } from '../../dist/index.js';
 
 describe('formatBytes', () => {
   it('should format 0 bytes', () => {
@@ -101,5 +101,21 @@ describe('formatBits', () => {
 
   it('should format 1 Mb', () => {
     assert.equal(formatBits(1000000), '1 Mb');
+  });
+});
+
+describe('formatBitrate', () => {
+  it('appends /s to formatBits output', () => {
+    assert.equal(formatBitrate(1000), '1 Kb/s');
+    assert.equal(formatBitrate(1_000_000), '1 Mb/s');
+  });
+
+  it('respects formatting options', () => {
+    assert.equal(formatBitrate(1500, { precision: 2 }), '1.5 Kb/s');
+    assert.equal(formatBitrate(1000, { space: false }), '1Kb/s');
+  });
+
+  it('handles zero', () => {
+    assert.equal(formatBitrate(0), '0 b/s');
   });
 });

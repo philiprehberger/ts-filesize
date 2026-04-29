@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/filesize.svg)](https://www.npmjs.com/package/@philiprehberger/filesize)
 [![Last updated](https://img.shields.io/github/last-commit/philiprehberger/ts-filesize)](https://github.com/philiprehberger/ts-filesize/commits/main)
 
-Human-readable file size formatting and parsing — bytes to KB, MB, GB and back.
+Human-readable file size formatting and parsing — bytes to KB, MB, GB and back
 
 ## Installation
 
@@ -53,19 +53,23 @@ formatBits(1000);      // "1 Kb"
 formatBits(1000000);   // "1 Mb"
 ```
 
+### Format bitrate
+
+```ts
+import { formatBitrate } from '@philiprehberger/filesize';
+
+formatBitrate(1_000_000);    // "1 Mb/s"
+formatBitrate(125_000_000);  // "125 Mb/s"
+```
+
 ## API
 
-### `formatBytes(bytes: number, options?: FormatOptions): string`
-
-Converts a byte count to a human-readable string using SI (decimal) or IEC (binary) units.
-
-### `parseBytes(str: string): number`
-
-Parses a human-readable file size string back to a byte count. Supports SI, IEC, and bit units. Case-insensitive.
-
-### `formatBits(bits: number, options?: FormatOptions): string`
-
-Converts a bit count to a human-readable string using SI bit units (Kb, Mb, Gb).
+| Function | Description |
+|----------|-------------|
+| `formatBytes(bytes, options?)` | Format bytes as human-readable SI (KB, MB) or IEC (KiB, MiB) string |
+| `parseBytes(str)` | Parse a human-readable file size string back to bytes |
+| `formatBits(bits, options?)` | Format bits as `Kb`, `Mb`, `Gb` |
+| `formatBitrate(bitsPerSecond, options?)` | Format bits-per-second as `Kb/s`, `Mb/s`, `Gb/s` |
 
 ### `FormatOptions`
 

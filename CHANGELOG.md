@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Add `formatBitrate(bitsPerSecond, options?)` for human-readable bandwidth display (`Kb/s`, `Mb/s`, `Gb/s`)
+- Convert API section to standardized table format
+- Remove trailing period from README one-liner to match the standard template
+
 ## 0.1.2
 
 - Standardize README to 3-badge format with emoji Support section
